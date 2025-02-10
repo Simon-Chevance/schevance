@@ -1,4 +1,11 @@
-const TsIcon = ({width, height}) => (
+import React from "react";
+
+interface TsIconProps {
+  width: number | string;
+  height: number | string;
+}
+
+const TsIcon: React.FC<TsIconProps> = ({width, height}) => (
   <svg
     fill="none"
     height={height}

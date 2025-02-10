@@ -14,29 +14,38 @@ import {
     ReactIcon,
     ReduxIcon,
     TsIcon,
-    ViteIcon
+    ViteIcon,
+    LinkedinIcon,
+    BentoIcon,
+    GithubIcon,
+    EmailIcon
    } from "../assets"
 
-export const navLinks = [
+
+const navLinks = [
     {
         id: 1,
-        label: "Home",
-        icon: ""
+        label: "Email",
+        icon: EmailIcon,
+        path: "mailto:simonchevance28@gmail.com"
     },
     {
         id: 2,
-        label: "Mail",
-        icon: ""
+        label: "Bento",
+        icon: BentoIcon,
+        path: "https://bento.me/schevance"
     },
     {
         id: 3,
         label: "Linkedin",
-        icon: ""
+        icon: LinkedinIcon,
+        path: "https://www.linkedin.com/in/schevance/"
     },
 {
         id: 4,
         label: "Github",
-        icon: ""
+        icon: GithubIcon,
+        path: "https://github.com/Simon-Chevance"
     },
 ]
 
@@ -93,4 +102,4 @@ const technologies = [
     },
 ]
 
-export { technologies };
+export { technologies, navLinks };

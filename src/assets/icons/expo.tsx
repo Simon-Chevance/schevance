@@ -1,4 +1,11 @@
-const ExpoIcon = ({width, height}) => (
+import React from "react";
+
+interface ExpoIconProps {
+  width: number | string;
+  height: number | string;
+}
+
+const ExpoIcon: React.FC<ExpoIconProps> = ({width, height}) => (
     <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}

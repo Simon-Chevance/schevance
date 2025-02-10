@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 @layer utilities {
   .neon-pink-shadow {
     text-shadow: 0 0 5px #ff007f, 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 40px #ff007f;
@@ -23,8 +23,7 @@
   }
 }
 
-
 :root{
-  background-color: black;
+  /*background-color: black;*/
   padding: 0 10%;
 }

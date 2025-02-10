@@ -1,4 +1,11 @@
-const Docker = ({width, height}) => (
+import React from "react";
+
+interface DockerPropsIcon {
+  width: number | string;
+  height: number | string;
+}
+
+const Docker: React.FC<DockerPropsIcon> = ({width, height}) => (
     <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"

@@ -1,8 +1,16 @@
-const ReduxIcon = ({width, height}) => (
+import React from "react";
+
+interface ReduxIconProps {
+    width: number | string;
+    height: number | string;
+}
+
+const ReduxIcon: React.FC<ReduxIconProps> = ({width, height}) => (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlSpace="preserve"
             id="Layer_1"
+            viewBox="0 0 64 64"
             width={width}
             height={height}
             x="0"

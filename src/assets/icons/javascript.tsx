@@ -1,4 +1,11 @@
-const JsIcon = ({width, height}) => (
+import React from "react";
+
+interface JsIconProps {
+    width: number | string;
+    height: number | string;
+}
+
+const JsIcon: React.FC<JsIconProps> = ({width, height}) => (
     <svg
         width={width}
         height={height}

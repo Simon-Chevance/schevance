@@ -1,4 +1,11 @@
-const Css = ({width, height}) => (
+import React from "react";
+
+interface CssIconProps {
+  width: number | string;
+  height: number | string;
+}
+
+const Css: React.FC<CssIconProps> = ({width, height}) => (
     <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width}

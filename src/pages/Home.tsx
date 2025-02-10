@@ -8,7 +8,7 @@ export default function Home() {
     const [loading, setLoading] = useState(true);
 
     return (
-        <div className="min-h-screen bg-black">
+        <div className="min-h-screen">
             {loading ? (
                 <div className="flex items-center justify-center min-h-screen">
                     <LoadingBar onComplete={() => setLoading(false)} />

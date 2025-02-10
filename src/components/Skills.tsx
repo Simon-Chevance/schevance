@@ -12,9 +12,11 @@ export default function Skills() {
     const rows = chunkArray(technologies, 7);
 
     return (
-        <div className="flex flex-col items-center">
-            <p className="text-2xl text-red-700">Skills.</p>
-            <div className="w-full">
+        <div className="flex flex-col justify-center w-full">
+            <div className="flex flex-col items-center justify-center">
+                <p className="text-2xl text-neon-blue neon-blue-shadow">Skills.</p>
+            </div>
+            <div className="items-start">
                 {rows.map((row, rowIndex) => (
                     <div
                         key={rowIndex}
@@ -25,9 +27,9 @@ export default function Skills() {
                             return (
                                 <div
                                     key={technology.label}
-                                    className="hover:bg-red-300 flex flex-col items-center p-2 rounded-sm"
+                                    className="hover:bg-blue-600/70 cursor-pointer flex flex-col items-center p-2 rounded-sm"
                                 >
-                                    <IconComponent height={64} width={64}/>
+                                    <IconComponent height={54} width={54} />
                                     <p className="text-white text-sm">
                                         {technology.label}
                                     </p>

@@ -1,4 +1,11 @@
-const Appwrite = ({width, height}) => (
+import React from "react";
+
+interface AppwriteIconProps {
+  width: number | string;
+  height: number | string;
+}
+
+const Appwrite: React.FC<AppwriteIconProps> = ({width, height}) => (
     <svg
       version="1.1"
       id="Layer_1"

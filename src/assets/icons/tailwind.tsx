@@ -1,4 +1,11 @@
-const TailwindIcon= ({height, width}) => (
+import React from "react";
+
+interface TailwindIconProps {
+    width: number | string;
+    height: number | string;
+}
+
+const TailwindIcon: React.FC<TailwindIconProps> = ({height, width}) => (
     <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height}>
         <defs>
             <linearGradient x1="0" y1="-21.333" y2="85.333" id="A" x2="64" gradientUnits="userSpaceOnUse">

@@ -1,4 +1,11 @@
-const ViteIcon = ({width, height}) => (
+import React from "react";
+
+interface ViteIconProps {
+  width: number | string;
+  height: number | string;
+}
+
+const ViteIcon: React.FC<ViteIconProps> = ({width, height}) => (
   <svg
     width={width}
     height={height}

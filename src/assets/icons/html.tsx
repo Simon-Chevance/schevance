@@ -1,5 +1,11 @@
-const HtmlIcon = ({width, height}) => (
+import React from "react";
 
+interface HtmlIconProps {
+    width: number | string;
+    height: number | string;
+}
+
+const HtmlIcon: React.FC<HtmlIconProps> = ({width, height}) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32">
     <path d="M4.46 28.802L1.892.001h28.216l-2.57 28.797L15.982 32z" fill="#e44d26" />
     <path d="M25.337 26.964l2.197-24.608H16v27.197z" fill="#f16529" />
