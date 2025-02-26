@@ -5,6 +5,7 @@ interface AppwriteIconProps {
   height: number | string;
 }
 
+// @ts-ignore
 const Appwrite: React.FC<AppwriteIconProps> = ({width, height}) => (
     <svg
       version="1.1"
@@ -16,7 +17,6 @@ const Appwrite: React.FC<AppwriteIconProps> = ({width, height}) => (
       viewBox="0 0 64 64"
       width={width}
       height={height}
-      style={{ enableBackground: 'new 0 0 64 64' }}
       xmlSpace="preserve"
     >
       <style type="text/css">{'.st0{fill:#F02E65;}'}</style>

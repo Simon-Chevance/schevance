@@ -12,14 +12,21 @@ const LoadingBar: React.FC<LoadingBarProps> = ({ onComplete }) => {
             setProgress(prev => {
                 if (prev >= 100) {
                     clearInterval(interval);
-                    if (onComplete) onComplete();
                     return 100;
                 }
                 return prev + 1;
             });
         }, 13);
+
         return () => clearInterval(interval);
-    }, [onComplete]);
+    }, []);
+
+    // Exécuter onComplete après la mise à jour de l'état
+    useEffect(() => {
+        if (progress === 100 && onComplete) {
+            onComplete();
+        }
+    }, [progress, onComplete]);
 
     return (
         <div className="relative w-full h-4 bg-gray-900 rounded overflow-hidden shadow-lg mb-4">

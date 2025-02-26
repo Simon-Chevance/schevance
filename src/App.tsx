@@ -1,5 +1,5 @@
 import {BrowserRouter, Route, Routes} from "react-router";
-import ROUTES from "./ROUTES";
+import ROUTES from "./ROUTES.ts";
 import Home from "./pages/Home.tsx";
 import NotFound from "./pages/NotFound.tsx";
 

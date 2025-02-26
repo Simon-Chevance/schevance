@@ -6,7 +6,7 @@ interface TailwindIconProps {
 }
 
 const TailwindIcon: React.FC<TailwindIconProps> = ({height, width}) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height}>
+    <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 64 64">
         <defs>
             <linearGradient x1="0" y1="-21.333" y2="85.333" id="A" x2="64" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#2383ae" offset="0%"/>

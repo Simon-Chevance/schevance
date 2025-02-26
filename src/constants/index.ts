@@ -3,6 +3,7 @@ import {
     Css,
     Docker,
     ExpoIcon,
+    GraphqlIcon,
     HtmlIcon,
     TailwindIcon,
     Java,
@@ -18,8 +19,8 @@ import {
     LinkedinIcon,
     BentoIcon,
     GithubIcon,
-    EmailIcon
-   } from "../assets"
+    EmailIcon, PrismaIcon, NextIcon
+} from "../assets"
 
 
 const navLinks = [
@@ -64,6 +65,9 @@ const technologies = [
         label: "expo",
         icon: ExpoIcon
     },{
+        label: "graphql",
+        icon: GraphqlIcon
+    },{
         label: "html",
         icon: HtmlIcon
     },{
@@ -84,6 +88,12 @@ const technologies = [
     },{
         label: "php",
         icon: Php
+    },{
+        label: "prismadb",
+        icon: PrismaIcon
+    },{
+        label: "nextjs",
+        icon: NextIcon
     },{
         label: "nodejs",
         icon: NodeIcon

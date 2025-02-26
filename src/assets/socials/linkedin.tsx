@@ -1,8 +1,8 @@
 import React from "react";
 
 interface LinkedinIconProps {
-    width: number | string;
-    height: number | string;
+    width?: number | string;
+    height?: number | string;
 }
 
 const LinkedinIcon: React.FC<LinkedinIconProps> = ({width, height}) => {

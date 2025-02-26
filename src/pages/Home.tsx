@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Skills from "../components/Skills";
 import LoadingBar from "../components/LoadingBar";
+import Projects from "../components/Projects.tsx";
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -17,6 +18,7 @@ export default function Home() {
                 <div className="animate-fadeIn">
                     <NavBar />
                     <Skills />
+                    <Projects/>
                     <Footer />
                 </div>
             )}

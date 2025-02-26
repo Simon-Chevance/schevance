@@ -1,17 +1,17 @@
 import React from 'react';
 
 interface GithubIconProps {
-    width: number | string;
-    height: number | string;
+    width?: number | string;
+    height?: number | string;
 }
 
-const GithubIcon: React.FC<GithubIconProps> = ({ width, height }) => {
+const GithubIcon: React.FC<GithubIconProps> = ({ width, height}) => {
     return (
         <svg
             width={width}
             height={height}
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 256 256"
+            viewBox="0 0 100 100"
             fillRule="nonzero"
         >
             <path
