@@ -20,12 +20,12 @@ export const getRandomNeonColor = () => {
 };
 
 // Function to get a specific neon color by index
-export const getNeonColor = (index) => {
+export const getNeonColor = (index: number) => {
     return neonColors[index % neonColors.length];
 };
 
 // Additional color utilities
-export const darkenColor = (color, amount = 0.2) => {
+export const darkenColor = (color: string, amount: number = 0.2) => {
     // Convert hex to RGB
     let r = parseInt(color.substring(1, 3), 16);
     let g = parseInt(color.substring(3, 5), 16);

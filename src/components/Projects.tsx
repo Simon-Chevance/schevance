@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { getRandomNeonColor, darkenColor } from '../utils/colors.ts';
+import { useState, useEffect } from 'react';
+import { getRandomNeonColor } from '../utils/colors.ts';
 import {projectsData} from "../data/data.ts";
 
 export default function Projects() {
-    const [colors, setColors] = useState({});
-    const [glitchIndex, setGlitchIndex] = useState(null);
+    const [colors, setColors] = useState<Record<number, string>>({});
+    const [glitchIndex, setGlitchIndex] = useState<number | null>(null);
 
     // Assign a random color to each project when component mounts
     useEffect(() => {
-        const projectColors = {};
+        const projectColors: {[key: number]: string} = {};
         projectsData.forEach(project => {
             projectColors[project.id] = getRandomNeonColor();
         });
@@ -191,7 +191,7 @@ export default function Projects() {
             </div>
 
             {/* CSS styles for animation and glitch effects */}
-            <style jsx>{`
+            <style>{`
                 @keyframes scanline {
                     0% { top: -10%; }
                     100% { top: 100%; }

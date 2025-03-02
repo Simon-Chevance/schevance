@@ -28,7 +28,7 @@ const navLinks = [
         id: 1,
         label: "Email",
         icon: EmailIcon,
-        path: "mailto:simonchevance28@gmail.com"
+        path: "mailto:hello@schevance.io"
     },
     {
         id: 2,

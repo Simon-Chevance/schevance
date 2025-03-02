@@ -87,15 +87,15 @@ export const getFeaturedProjects = () => {
     return projectsData.filter(project => project.featured);
 };
 
-export const getProjectsByYear = (year) => {
+export const getProjectsByYear = (year: number) => {
     return projectsData.filter(project => project.year === year);
 };
 
-export const getProjectsByStatus = (status) => {
+export const getProjectsByStatus = (status: string) => {
     return projectsData.filter(project => project.status === status);
 };
 
-export const getProjectById = (id) => {
+export const getProjectById = (id: number) => {
     return projectsData.find(project => project.id === id);
 };
 
